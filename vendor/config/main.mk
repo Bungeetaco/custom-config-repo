@@ -12,8 +12,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Seedvault
 
-# Add back 2 buttons navigation overlay
+# Add back 2 buttons navigation overlay & android auto stub
 PRODUCT_PACKAGES += \
+    AndroidAuto \
     NavigationBarMode2ButtonOverlay
 
 # Fix for Google Camera

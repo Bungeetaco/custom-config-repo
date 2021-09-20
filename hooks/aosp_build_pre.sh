@@ -42,7 +42,6 @@ git clone https://github.com/rattlesnakeos/community_patches "${community_patche
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00001-global-internet-permission-toggle.patch"
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00003-enable-volte-wifi-calling.patch"
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00004-use-cloudflare-dns.patch"
-patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00005-2-button-navigation.patch"
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00006-increase-default-maximum-password-length.patch"
 
 # apply custom hosts file

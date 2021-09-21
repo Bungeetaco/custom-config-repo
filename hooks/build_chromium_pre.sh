@@ -8,11 +8,11 @@
 # git am --whitespace=nowarn ${vanadium_dir}/patches/*.patch
 
 if [ "${APPLY_BROMITE_PATCHES}" == "true" ]; then
+    cd "${CHROMIUM_BUILD_DIR}/src"
+    rm -rf .git/rebase-apply/
     echo "Applying component-update BUILD.gn patch"
     git apply --whitespace=nowarn "${CUSTOM_DIR}"/fix-bromite-component-updater-deps.patch
     echo "applying bromite patches"
-    cd "${CHROMIUM_BUILD_DIR}/src"
-    rm -rf .git/rebase-apply/
     # Apply the patches in the given order
     while IFS= read -r line; do git am --whitespace=nowarn "${BROMITE_DIR}/build/patches/$line"; done < "${BROMITE_DIR}/build/bromite_patches_list.txt"
     # Apply component-update BUILD.gn patch

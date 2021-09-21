@@ -13,4 +13,7 @@ if [ "${APPLY_BROMITE_PATCHES}" == "true" ]; then
     rm -rf .git/rebase-apply/
     # Apply the patches in the given order
     while IFS= read -r line; do git am --whitespace=nowarn "${BROMITE_DIR}/build/patches/$line"; done < "${BROMITE_DIR}/build/bromite_patches_list.txt"
+    # Apply component-update BUILD.gn patch
+    echo "Applying component-update BUILD.gn patch"
+    git am --whitespace=nowarn "${CUSTOM_DIR}"/fix-bromite-component-updater-deps.patch
 fi

@@ -1,0 +1,12 @@
+diff --git a/components/component_updater/BUILD.gn b/components/component_updater/BUILD.gn
+index fe9ea37fcf33c..cdd4003b54403 100644
+--- a/components/component_updater/BUILD.gn
++++ b/components/component_updater/BUILD.gn
+@@ -36,7 +36,6 @@ static_library("component_updater") {
+     "//components/crx_file",
+     "//components/update_client",
+     "//components/version_info",
++    "//services/network/public/mojom"
+     "//third_party/boringssl:boringssl",
+     "//ui/base",
+     "//url",

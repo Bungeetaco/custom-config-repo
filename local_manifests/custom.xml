@@ -18,6 +18,6 @@
   <project path="external/seedvault" name="seedvault" remote="seedvault-app" revision="ecdc0c27165b97e42ce72cf859edbf62c5b045c8" />
   
   <!-- AuroraStore and its priviledged extension -->
-  <project path="" name="aurora-store" remote="aurora" revision="master" />
+  <project path="packages/apps" name="aurora-store" remote="aurora" revision="master" />
 
 </manifest>

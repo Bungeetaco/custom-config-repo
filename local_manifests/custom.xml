@@ -3,6 +3,7 @@
   <remote name="personal-remote" fetch="https://github.com/Bungeetaco/" revision="chaosp_11" />
   <remote name="seedvault-app" fetch="https://github.com/seedvault-app/" revision="master" />
   <remote name="bungeetaco" fetch="https://github.com/Bungeetaco/" revision="11.0" />
+  <remote name="aurora" fetch="https://gitlab.com/mgidding" revision="master" />
 
   <!-- this custom repo - do not change path -->
   <project path="vendor/custom" name="custom-config-repo" remote="personal-remote" />
@@ -17,6 +18,6 @@
   <project path="external/seedvault" name="seedvault" remote="seedvault-app" revision="ecdc0c27165b97e42ce72cf859edbf62c5b045c8" />
   
   <!-- AuroraStore and its priviledged extension -->
-  <project path="" name="aurora-store" remote="bungeetaco" revision="master" />
+  <project path="" name="aurora-store" remote="aurora" revision="master" />
 
 </manifest>

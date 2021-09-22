@@ -4,6 +4,7 @@
   <remote name="seedvault-app" fetch="https://github.com/seedvault-app/" revision="master" />
   <remote name="bungeetaco" fetch="https://github.com/Bungeetaco/" revision="11.0" />
   <remote name="aurora" fetch="https://gitlab.com/mgidding" revision="master" />
+  <remote name="fdroid" fetch="https://gitlab.com/fdroid" revision="master" />
 
   <!-- this custom repo - do not change path -->
   <project path="vendor/custom" name="custom-config-repo" remote="personal-remote" />
@@ -17,7 +18,10 @@
   <!-- seedvault pinned to a specific revision -->
   <project path="external/seedvault" name="seedvault" remote="seedvault-app" revision="ecdc0c27165b97e42ce72cf859edbf62c5b045c8" />
   
-  <!-- AuroraStore and its priviledged extension -->
+  <!-- AuroraStore and its privileged extension -->
   <project path="packages/apps" name="aurora-store" remote="aurora" revision="master" />
-
+  
+  <!-- F-Droid and its privileged extension -->
+  <project path="packages/apps/F-DroidPrivilegedExtension" name="fdroid" remote="fdroid" revision="master" />
+  
 </manifest>

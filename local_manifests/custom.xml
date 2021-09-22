@@ -22,6 +22,6 @@
   <project path="packages/apps" name="aurora-store" remote="aurora" revision="master" />
   
   <!-- F-Droid and its privileged extension -->
-  <project path="packages/apps/F-DroidPrivilegedExtension" name="fdroid" remote="fdroid" revision="master" />
+  <project path="packages/apps" name="privileged-extension" remote="fdroid" revision="master" />
   
 </manifest>

@@ -17,11 +17,11 @@ PRODUCT_PACKAGES += \
     AndroidAuto \
     NavigationBarMode2ButtonOverlay
 
-# Fix for Google Camera
-PRODUCT_COPY_FILES += \
-	vendor/custom/prebuilt/google_experience.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google_experience.xml
-
 # Aurora
 PRODUCT_PACKAGES += \
     AuroraServices \
     AuroraStore
+    
+# Fix for Google Camera
+PRODUCT_COPY_FILES += \
+	vendor/custom/prebuilt/google_experience.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google_experience.xml

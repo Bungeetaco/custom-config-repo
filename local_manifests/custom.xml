@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="personal-remote" fetch="https://github.com/Bungeetaco/" revision="chaosp_11" />
-  <remote name="seedvault-app" fetch="https://github.com/seedvault-app/" revision="master" />
   <remote name="bungeetaco" fetch="https://github.com/Bungeetaco/" revision="11.0" />
+  <remote name="seedvault-app" fetch="https://github.com/seedvault-app/" revision="master" />
   <remote name="aurora" fetch="https://gitlab.com/mgidding" revision="master" />
   <!-- <remote name="fdroid" fetch="https://gitlab.com/fdroid" revision="master" /> -->
 
